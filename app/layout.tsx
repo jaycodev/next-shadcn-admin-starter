@@ -15,21 +15,10 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Next.js + shadcn/ui Starter',
-  description: 'Starter template with Next.js 15, Tailwind CSS v4, and shadcn/ui.',
+  title: 'Next Shadcn Admin Starter',
+  description: 'Admin starter template with Next.js 15, Tailwind CSS v4, and shadcn/ui.',
   icons: {
-    icon: [
-      {
-        url: '/icons/favicon-light.svg',
-        media: '(prefers-color-scheme: light)',
-        type: 'image/svg+xml',
-      },
-      {
-        url: '/icons/favicon-dark.svg',
-        media: '(prefers-color-scheme: dark)',
-        type: 'image/svg+xml',
-      },
-    ],
+    icon: [{ url: '/icons/favicon.svg', type: 'image/svg+xml' }],
   },
 }
 
