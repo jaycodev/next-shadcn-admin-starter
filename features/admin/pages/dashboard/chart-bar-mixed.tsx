@@ -19,30 +19,30 @@ import {
 } from '@/components/ui/chart'
 
 const chartData = [
-  { level: 'primary', books: 320, fill: 'var(--color-primary)' },
-  { level: 'secondary', books: 450, fill: 'var(--color-secondary)' },
-  { level: 'superior', books: 610, fill: 'var(--color-superior)' },
-  { level: 'general', books: 180, fill: 'var(--color-general)' },
+  { level: 'primary', items: 320, fill: 'var(--color-primary)' },
+  { level: 'secondary', items: 450, fill: 'var(--color-secondary)' },
+  { level: 'superior', items: 610, fill: 'var(--color-superior)' },
+  { level: 'general', items: 180, fill: 'var(--color-general)' },
 ]
 
 const chartConfig = {
-  books: {
-    label: 'Libros',
+  items: {
+    label: 'Items',
   },
   primary: {
-    label: 'Primaria',
+    label: 'Categoría A',
     color: 'var(--chart-1)',
   },
   secondary: {
-    label: 'Secundaria',
+    label: 'Categoría B',
     color: 'var(--chart-2)',
   },
   superior: {
-    label: 'Superior',
+    label: 'Categoría C',
     color: 'var(--chart-3)',
   },
   general: {
-    label: 'General',
+    label: 'Categoría D',
     color: 'var(--chart-5)',
   },
 } satisfies ChartConfig
@@ -51,8 +51,8 @@ export function ChartBarMixed() {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Libros por Nivel de Categoría</CardTitle>
-        <CardDescription>Distribución del inventario por nivel educativo.</CardDescription>
+        <CardTitle>Items por Categoría</CardTitle>
+        <CardDescription>Distribución de items entre categorías.</CardDescription>
       </CardHeader>
       <CardContent>
         <ChartContainer config={chartConfig}>
@@ -72,15 +72,15 @@ export function ChartBarMixed() {
               axisLine={false}
               tickFormatter={(value) => chartConfig[value as keyof typeof chartConfig]?.label}
             />
-            <XAxis dataKey="books" type="number" hide />
+            <XAxis dataKey="items" type="number" hide />
             <ChartTooltip cursor={false} content={<ChartTooltipContent hideLabel />} />
-            <Bar dataKey="books" layout="vertical" radius={5} />
+            <Bar dataKey="items" layout="vertical" radius={5} />
           </BarChart>
         </ChartContainer>
       </CardContent>
       <CardFooter className="flex-col items-start gap-2 text-sm">
         <div className="flex gap-2 leading-none font-medium">
-          La categoría Superior tiene el mayor número de títulos.
+          La Categoría C tiene el mayor número de items.
           <TrendingUp className="h-4 w-4" />
         </div>
         <div className="text-muted-foreground leading-none">Total de categorías analizadas.</div>
