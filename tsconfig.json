@@ -19,6 +19,8 @@
       }
     ],
     "paths": {
+      "@admin/*": ["./features/admin/*"],
+      "@error/*": ["./features/error/*"],
       "@/*": ["./*"]
     }
   },

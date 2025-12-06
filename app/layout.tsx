@@ -15,7 +15,10 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Next Shadcn Admin Starter',
+  title: {
+    default: 'Next Shadcn Admin Starter',
+    template: '%s - Next Shadcn Admin Starter',
+  },
   description: 'Admin starter template with Next.js 15, Tailwind CSS v4, and shadcn/ui.',
   icons: {
     icon: [{ url: '/icons/favicon.svg', type: 'image/svg+xml' }],

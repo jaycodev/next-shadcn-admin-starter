@@ -1,0 +1,15 @@
+export const staleTimes: Record<string, number> = {
+  '/admin/prestamos': 10_000,
+  '/admin/reservas': 45_000,
+  '/admin/multas': 90_000,
+  '/admin/pagos': 90_000,
+  '/admin/ejemplares': 45_000,
+  '/admin/libros': 180_000,
+  '/admin/autores': 420_000,
+  '/admin/editoriales': 420_000,
+  '/admin/categorias': 720_000,
+  '/admin/ubicaciones': 720_000,
+  '/admin/lectores': 120_000,
+  '/admin/trabajadores': 720_000,
+  '/admin/roles': 900_000,
+}

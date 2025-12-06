@@ -96,7 +96,7 @@ export default function Home() {
       <div className="flex flex-wrap gap-4 justify-center">
         <Button asChild>
           <a
-            href="https://github.com/jaycodev/next-shadcn-starter"
+            href="https://github.com/jaycodev/next-shadcn-admin-starter"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2"
@@ -114,7 +114,7 @@ export default function Home() {
 
         <Button variant="outline" asChild>
           <a
-            href="https://github.com/jaycodev/next-shadcn-starter#readme"
+            href="https://github.com/jaycodev/next-shadcn-admin-starter#readme"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2"
